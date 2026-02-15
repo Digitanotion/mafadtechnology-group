@@ -78,7 +78,7 @@ export default function CookieConsent() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-mafad-navy mb-1">
-                        🇬🇧 We value your privacy
+                        We value your privacy
                       </h3>
                       <p className="text-sm text-gray-600 max-w-2xl">
                         We use cookies to enhance your browsing experience,
