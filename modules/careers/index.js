@@ -1,1 +1,1 @@
-// Careers module exports 
+export { default as Careers } from "./components/Careers";

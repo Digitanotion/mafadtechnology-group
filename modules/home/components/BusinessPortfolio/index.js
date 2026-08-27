@@ -9,6 +9,8 @@ import {
   Truck,
   Sun,
   Building2,
+  HeartPulse,
+  Users,
   ArrowRight,
 } from "lucide-react";
 import Container from "@/components/ui/Container";
@@ -16,21 +18,75 @@ import Card from "@/components/ui/Card";
 
 const businesses = [
   {
+    region: "United Kingdom",
+    regionColor: "text-mafad-cyan",
+    items: [
+      {
+        title: "MAFAD Care Staffing",
+        description:
+          "Reliable healthcare professionals and workforce solutions for care providers",
+        icon: HeartPulse,
+        href: "/united-kingdom#care-staffing",
+        color: "from-rose-500/20 to-pink-500/20",
+        iconColor: "text-rose-500",
+        tags: ["Healthcare", "Staffing"],
+      },
+      {
+        title: "MAFAD Care Services",
+        description:
+          "Person-centred care solutions supporting individuals and communities",
+        icon: Users,
+        href: "/united-kingdom#care-services",
+        color: "from-purple-500/20 to-pink-500/20",
+        iconColor: "text-purple-500",
+        tags: ["Supported Living", "Future"],
+      },
+      {
+        title: "MAFAD Technology UK",
+        description: "Digital transformation, IT consultancy and innovative technology",
+        icon: Building2,
+        href: "/united-kingdom/mafadtech-services",
+        color: "from-indigo-500/20 to-blue-500/20",
+        iconColor: "text-indigo-500",
+        tags: ["IT Consultancy", "Digital"],
+      },
+      {
+        title: "MAFAD Training Academy",
+        description: "Professional development, workforce training and skills advancement",
+        icon: School,
+        href: "/united-kingdom#training-academy",
+        color: "from-teal-500/20 to-green-500/20",
+        iconColor: "text-teal-500",
+        tags: ["Training", "Certification"],
+      },
+    ],
+  },
+  {
     region: "Nigeria",
     regionColor: "text-mafad-cyan",
     items: [
       {
-        title: "MAFAD Technology",
+        title: "MAFAD Technology Nigeria",
         description:
-          "Software, digital marketing, ICT training, solar installation",
+          "Software, digital marketing, ICT training and solar installation",
         icon: Laptop,
         href: "/nigeria/mafad-technology",
         color: "from-blue-500/20 to-cyan-500/20",
         iconColor: "text-mafad-cyan",
-        tags: ["ICT Services", "Training", "Solar"],
+        tags: ["Software", "ICT Training"],
       },
       {
-        title: "Coca-Cola Distribution",
+        title: "MAFAD Clothings Nigeria",
+        description:
+          "A modern African fashion brand combining creativity with contemporary design",
+        icon: Shirt,
+        href: "/nigeria#clothings",
+        color: "from-purple-500/20 to-pink-500/20",
+        iconColor: "text-purple-500",
+        tags: ["Fashion", "Lifestyle"],
+      },
+      {
+        title: "Coca-Cola Distribution/Retail",
         description: "Authorized sub-dealer for Coca-Cola HBC Nigeria",
         icon: Droplet,
         href: "/nigeria/coca-cola",
@@ -39,73 +95,23 @@ const businesses = [
         tags: ["FMCG", "Wholesale", "Retail"],
       },
       {
-        title: "Fashion Retail",
-        description: "Ready-to-wear casual and corporate fashion",
-        icon: Shirt,
-        href: "/nigeria/fashion-retail",
-        color: "from-purple-500/20 to-pink-500/20",
-        iconColor: "text-purple-500",
-        tags: ["Clothing", "Online Store", "Physical Outlet"],
-      },
-      {
-        title: "ICT Academy",
-        description: "Professional training and certification programs",
-        icon: School,
-        href: "/nigeria/ict-academy",
-        color: "from-green-500/20 to-emerald-500/20",
-        iconColor: "text-green-500",
-        tags: ["Certification", "Skills", "Development"],
-      },
-      {
-        title: "Logistics",
-        description: "Last-mile delivery and haulage services",
+        title: "Transport & Logistics",
+        description: "Connecting businesses through efficient movement of goods",
         icon: Truck,
-        href: "/nigeria/logistics",
+        href: "/nigeria#logistics",
         color: "from-yellow-500/20 to-amber-500/20",
         iconColor: "text-yellow-500",
-        tags: ["Delivery", "Distribution"],
+        tags: ["Distribution", "Warehousing"],
       },
       {
-        title: "Solar Energy",
-        description: "Renewable energy and power backup solutions",
+        title: "Future Nigeria Ventures",
+        description:
+          "Exploring strategic investments in solar, agriculture and beyond",
         icon: Sun,
-        href: "/nigeria/solar-energy",
+        href: "/nigeria#future-ventures",
         color: "from-orange-500/20 to-amber-500/20",
         iconColor: "text-orange-500",
-        tags: ["Solar", "Installation"],
-      },
-    ],
-  },
-  {
-    region: "United Kingdom",
-    regionColor: "text-mafad-cyan",
-    items: [
-      {
-        title: "MAFADTECH Services",
-        description: "IT consultancy and professional services",
-        icon: Building2,
-        href: "/united-kingdom/mafadtech-services",
-        color: "from-indigo-500/20 to-blue-500/20",
-        iconColor: "text-indigo-500",
-        tags: ["IT", "Consulting"],
-      },
-      {
-        title: "IT Consulting",
-        description: "Software development and technical support",
-        icon: Laptop,
-        href: "/united-kingdom/it-consulting",
-        color: "from-cyan-500/20 to-blue-500/20",
-        iconColor: "text-cyan-500",
-        tags: ["Development", "Support"],
-      },
-      {
-        title: "Professional Training",
-        description: "Skills development and career advancement",
-        icon: School,
-        href: "/united-kingdom/training",
-        color: "from-teal-500/20 to-green-500/20",
-        iconColor: "text-teal-500",
-        tags: ["Training", "Certification"],
+        tags: ["Solar", "Agriculture"],
       },
     ],
   },
@@ -113,34 +119,34 @@ const businesses = [
 
 export default function BusinessPortfolio() {
   return (
-    <section className="py-20 bg-mafad-gray">
+    <section id="businesses" className="py-20 bg-mafad-gray scroll-mt-24">
       <Container>
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-mafad-navy mb-4">
-            Our Business Portfolio
+            Our Businesses
           </h2>
           <p className="text-xl text-gray-600">
             Diversified operations delivering sustainable value across
-            technology, FMCG, retail, and professional services
+            healthcare, technology, education, fashion, FMCG and logistics
           </p>
           <div className="w-24 h-1 bg-mafad-cyan mx-auto mt-6" />
         </div>
 
-        {/* Nigeria Portfolio */}
+        {/* United Kingdom Portfolio */}
         <div className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <div>
               <h3 className="text-2xl font-bold text-mafad-navy flex items-center">
                 <span className="w-2 h-6 bg-mafad-cyan rounded-full mr-3" />
-                Nigeria Operations
+                United Kingdom Operations
               </h3>
               <p className="text-gray-600 mt-1">
-                MAFAD Technology Limited - Since 2021
+                MAFAD Group Limited - Since 2025
               </p>
             </div>
             <Link
-              href="/nigeria"
+              href="/united-kingdom"
               className="group flex items-center text-mafad-cyan font-semibold hover:text-mafad-navy transition-colors"
             >
               View All
@@ -184,20 +190,20 @@ export default function BusinessPortfolio() {
           </div>
         </div>
 
-        {/* UK Portfolio */}
+        {/* Nigeria Portfolio */}
         <div>
           <div className="flex items-center justify-between mb-8">
             <div>
               <h3 className="text-2xl font-bold text-mafad-navy flex items-center">
                 <span className="w-2 h-6 bg-mafad-cyan rounded-full mr-3" />
-                United Kingdom Operations
+                Nigeria Operations
               </h3>
               <p className="text-gray-600 mt-1">
-                MAFADTECH Services Limited - Since 2025
+                MAFAD Technology Limited - Since 2021
               </p>
             </div>
             <Link
-              href="/united-kingdom"
+              href="/nigeria"
               className="group flex items-center text-mafad-cyan font-semibold hover:text-mafad-navy transition-colors"
             >
               View All
@@ -234,9 +240,6 @@ export default function BusinessPortfolio() {
                         {tag}
                       </span>
                     ))}
-                  </div>
-                  <div className="mt-4 text-xs text-gray-500">
-                    SOC: 2136, 2139, 3545, 1136
                   </div>
                 </Link>
               </Card>

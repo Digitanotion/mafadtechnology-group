@@ -7,9 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "MAFAD Technology Group - Innovating Technology. Powering Trade.",
+  title: "MAFAD GROUP LIMITED - One Group. Many Solutions. Greater Impact.",
   description:
-    "A diversified multinational group operating in Nigeria and the United Kingdom.",
+    "MAFAD GROUP LIMITED is a diversified UK-Nigeria business group delivering innovative solutions across healthcare, technology, education, fashion, FMCG distribution and logistics.",
 };
 
 export default function RootLayout({ children }) {

@@ -67,8 +67,8 @@ export default function VisionMission() {
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               To become a trusted and innovative multinational business group
-              delivering sustainable value through technology, trade, and
-              services.
+              delivering sustainable value across healthcare, technology,
+              education, fashion, FMCG and logistics.
             </p>
           </div>
 

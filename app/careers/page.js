@@ -1,1 +1,5 @@
-export default function CareersPage() { return <div>Careers</div> } 
+import { Careers } from "@/modules/careers";
+
+export default function CareersPage() {
+  return <Careers />;
+}

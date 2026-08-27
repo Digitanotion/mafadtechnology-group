@@ -246,7 +246,7 @@ export default function Leadership() {
             </div>
 
             <blockquote className="text-xl md:text-2xl italic font-light text-white/90 mb-6">
-              "Our greatest asset is our people. The MAFAD Technology Group team
+              "Our greatest asset is our people. The MAFAD Group team
               comprises dedicated professionals who share a common vision of
               building sustainable, impactful businesses that create value for
               our clients, partners, and communities across Nigeria and the

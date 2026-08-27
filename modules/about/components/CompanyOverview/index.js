@@ -24,9 +24,9 @@ const metrics = [
   },
   {
     icon: TrendingUp,
-    label: "Revenue",
-    value: "₦45M",
-    description: "Year 1 Projection",
+    label: "Business Sectors",
+    value: "7+",
+    description: "Healthcare to Logistics",
   },
 ];
 
@@ -40,21 +40,24 @@ export default function CompanyOverview() {
               Who We Are
             </span>
             <h2 className="text-4xl font-bold text-mafad-navy mt-2 mb-6">
-              MAFAD Technology Group
+              MAFAD GROUP LIMITED
             </h2>
             <div className="space-y-4 text-gray-600">
               <p className="text-lg">
-                MAFAD Technology Group is a diversified business group with
-                operations in Nigeria and the United Kingdom. The Group operates
-                across technology services, ICT training, FMCG distribution,
-                fashion retail, logistics, and general trading.
+                MAFAD GROUP LIMITED is an international business group focused
+                on delivering practical solutions that address modern business
+                and community needs. Operating across the United Kingdom and
+                Nigeria, we bring together healthcare and social care,
+                technology and digital solutions, education and training,
+                fashion and lifestyle, FMCG distribution and retail, and
+                transport and logistics under one unified vision.
               </p>
               <p className="text-lg">
-                Our focus is on delivering practical solutions, creating
-                employment, and building scalable businesses that meet local and
-                international standards. We are committed to operating
-                ethically, leveraging innovation, and contributing positively to
-                economic development in every market we serve.
+                Our mission is to combine innovation, expertise and
+                responsible enterprise to create businesses that improve
+                lives, strengthen partnerships and support economic growth. We
+                believe sustainable growth comes from connecting people,
+                technology and opportunities.
               </p>
             </div>
           </div>

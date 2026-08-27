@@ -24,10 +24,10 @@ import Card from "@/components/ui/Card";
 
 // WhatsApp Configuration
 const WHATSAPP_NIGERIA = "2348123456789"; // Replace with actual Nigeria number
-const WHATSAPP_UK = "447123456789"; // Replace with actual UK number
+const WHATSAPP_UK = "441482482401";
 
-const whatsappNigeriaUrl = `https://wa.me/${WHATSAPP_NIGERIA}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFAD Technology Group Nigeria.")}`;
-const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFADTECH Services UK.")}`;
+const whatsappNigeriaUrl = `https://wa.me/${WHATSAPP_NIGERIA}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFAD Technology Nigeria.")}`;
+const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFAD Group UK.")}`;
 
 const offices = [
   {
@@ -54,8 +54,8 @@ const offices = [
     company: "MAFADTECH Services Limited",
     rc: "Company No: 16173180",
     address: ["29, Imperia Way", "Hull, England HU9 5EQ"],
-    phone: "+44 7123 456789",
-    email: "info@mafadtechservices.co.uk",
+    phone: "+44 1482 482401",
+    email: "info@mafadgroup.com",
     hours: ["Monday - Friday: 9:00 AM - 5:30 PM", "Saturday - Sunday: Closed"],
     icon: Globe,
     color: "from-mafad-cyan to-mafad-cyan/90",
@@ -83,11 +83,19 @@ const departments = [
   },
   {
     name: "UK Services",
-    email: "services@mafadtechservices.co.uk",
-    phone: "+44 7123 456789",
+    email: "info@mafadgroup.com",
+    phone: "+44 1482 482401",
     whatsapp: WHATSAPP_UK,
     response: "Within 4 hours",
     icon: Globe,
+  },
+  {
+    name: "Careers",
+    email: "careers@mafadgroup.com",
+    phone: "+44 1482 482401",
+    whatsapp: WHATSAPP_UK,
+    response: "Within 24 hours",
+    icon: Briefcase,
   },
   {
     name: "Training & Academy",
@@ -243,7 +251,7 @@ export default function Contact() {
                     WhatsApp United Kingdom
                   </p>
                   <p className="text-lg font-bold text-gray-900">
-                    MAFADTECH Services
+                    MAFAD Group UK
                   </p>
                   <p className="text-sm text-gray-600">
                     Click to chat • &lt;2hr response

@@ -1,6 +1,7 @@
 import {
   AboutHero,
   CompanyOverview,
+  CEOMessage,
   VisionMission,
   Leadership,
   Governance,
@@ -11,6 +12,7 @@ export default function AboutPage() {
     <>
       <AboutHero />
       <CompanyOverview />
+      <CEOMessage />
       <VisionMission />
       <Leadership />
       <Governance />

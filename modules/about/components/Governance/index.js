@@ -16,6 +16,7 @@ const registrations = [
     country: "Nigeria",
     icon: Building2,
     company: "MAFAD Technology Limited",
+    tradingAs: "trading as MAFAD Technology Nigeria",
     number: "RC: 6893862",
     date: "22 June 2021",
     regulator: "Corporate Affairs Commission (CAC)",
@@ -34,6 +35,7 @@ const registrations = [
     country: "United Kingdom",
     icon: Globe,
     company: "MAFADTECH Services Limited",
+    tradingAs: "trading as MAFAD Technology UK",
     number: "Company No: 16173180",
     date: "9 January 2025",
     regulator: "Companies House",
@@ -116,6 +118,11 @@ export default function Governance() {
                   <div>
                     <p className="text-sm text-gray-500">Company Name</p>
                     <p className="font-semibold text-gray-900">{reg.company}</p>
+                    {reg.tradingAs && (
+                      <p className="text-xs text-gray-500 mt-0.5">
+                        {reg.tradingAs}
+                      </p>
+                    )}
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
@@ -208,11 +215,11 @@ export default function Governance() {
 
           <div className="border-t border-gray-100 pt-6">
             <p className="text-gray-600 text-center">
-              MAFAD Technology Group is positioned as a diversified, compliant,
-              and growth-oriented enterprise with strong potential in
-              technology, FMCG distribution, and retail. The Group seeks
-              strategic partnerships and funding to scale operations across
-              Nigeria and the United Kingdom.
+              MAFAD GROUP LIMITED is positioned as a diversified, compliant,
+              and growth-oriented enterprise spanning healthcare, technology,
+              education, fashion, FMCG distribution, and logistics. The Group
+              seeks strategic partnerships and funding to scale operations
+              across Nigeria and the United Kingdom.
             </p>
           </div>
         </div>

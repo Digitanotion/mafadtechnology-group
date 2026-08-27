@@ -22,8 +22,8 @@ const trustItems = [
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
-    description: "₦160M 5-Year Projection",
+    title: "Diversified Group",
+    description: "7+ Business Sectors, 2 Countries",
     color: "text-mafad-cyan",
   },
 ];

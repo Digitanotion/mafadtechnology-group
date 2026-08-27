@@ -21,21 +21,21 @@ export default function AboutHero() {
           <div className="flex items-center justify-center space-x-2 text-mafad-cyan mb-4">
             <Building2 className="w-5 h-5" />
             <span className="text-sm font-semibold uppercase tracking-wider">
-              MAFAD Technology Group
+              MAFAD GROUP LIMITED
             </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Building the Future Through
+            One Group.
             <span className="text-mafad-cyan block mt-2">
-              Technology, Trade & Services
+              Many Solutions. Greater Impact.
             </span>
           </h1>
 
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A diversified multinational group with operations in Nigeria and the
-            United Kingdom, committed to sustainable value creation and economic
-            growth.
+            A diversified UK-Nigeria business group delivering innovative
+            solutions across technology, healthcare, education, fashion, FMCG
+            distribution, logistics and future business ventures.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 mt-12">

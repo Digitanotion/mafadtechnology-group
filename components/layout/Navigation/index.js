@@ -75,7 +75,7 @@ const menuConfig = {
       icon: Globe,
       megaContent: {
         title: "Nigeria Operations",
-        subtitle: "MAFAD Technology Limited - Since 2021",
+        subtitle: "MAFAD Technology Nigeria • Est. 2021",
         featured: {
           title: "Authorized Sub-Dealer",
           value: "Coca-Cola HBC",
@@ -84,55 +84,43 @@ const menuConfig = {
         location: "Owo & Akure, Ondo State",
         columns: [
           {
-            title: "Technology & ICT",
+            title: "Technology & Retail",
             items: [
               {
-                label: "MAFAD Technology",
+                label: "MAFAD Technology Nigeria",
                 href: "/nigeria/mafad-technology",
                 description: "Software, digital, training",
                 icon: Code,
               },
-              //   {
-              //     label: "ICT Academy",
-              //     href: "/nigeria/ict-academy",
-              //     description: "Certification programs",
-              //     icon: School,
-              //   },
               {
-                label: "Solar Energy",
-                href: "/nigeria/solar-energy",
-                description: "Renewable solutions",
-                icon: Sun,
+                label: "Coca-Cola Distribution",
+                href: "/nigeria/coca-cola",
+                description: "FMCG distribution & retail",
+                icon: Droplet,
               },
             ],
           },
           {
-            title: "Trade & Retail",
+            title: "Fashion & Logistics",
             items: [
               {
-                label: "Coca-Cola Distribution",
-                href: "/nigeria/coca-cola",
-                description: "Authorized sub-dealer",
-                icon: Droplet,
+                label: "MAFAD Clothings Nigeria",
+                href: "/nigeria#clothings",
+                description: "Modern African fashion brand",
+                icon: Shirt,
               },
-              //   {
-              //     label: "Fashion Retail",
-              //     href: "/nigeria/fashion-retail",
-              //     description: "Ready-to-wear clothing",
-              //     icon: Shirt,
-              //   },
-              //   {
-              //     label: "Logistics",
-              //     href: "/nigeria/logistics",
-              //     description: "Last-mile delivery",
-              //     icon: Truck,
-              //   },
-              //   {
-              //     label: "General Trading",
-              //     href: "/nigeria/general-trading",
-              //     description: "Merchandise",
-              //     icon: Briefcase,
-              //   },
+              {
+                label: "Transport & Logistics",
+                href: "/nigeria#logistics",
+                description: "Moving goods, connecting business",
+                icon: Truck,
+              },
+              {
+                label: "Future Ventures",
+                href: "/nigeria#future-ventures",
+                description: "Solar, agriculture & more",
+                icon: Sun,
+              },
             ],
           },
         ],
@@ -145,7 +133,7 @@ const menuConfig = {
       icon: Building2,
       megaContent: {
         title: "United Kingdom",
-        subtitle: "MAFADTECH Services Limited - Since 2025",
+        subtitle: "MAFAD Group Limited • Est. 2025",
         featured: {
           title: "Company No",
           value: "16173180",
@@ -154,45 +142,36 @@ const menuConfig = {
         location: "Hull, England",
         columns: [
           {
-            title: "Technology & Training",
+            title: "Healthcare",
             items: [
               {
-                label: "MAFADTECH Services",
-                href: "/united-kingdom/mafadtech-services",
-                description: "Overview & all services",
+                label: "MAFAD Care Staffing",
+                href: "/united-kingdom#care-staffing",
+                description: "Healthcare workforce solutions",
+                icon: Users,
+              },
+              {
+                label: "MAFAD Care Services",
+                href: "/united-kingdom#care-services",
+                description: "Person-centred care (future)",
                 icon: Building2,
-              },
-              {
-                label: "Technology Consultancy",
-                href: "/united-kingdom/mafadtech-services#technology-consultancy",
-                description:
-                  "IT consultancy, system implementation & support (SIC 62020)",
-                icon: Code,
-              },
-              {
-                label: "Training Services",
-                href: "/united-kingdom/mafadtech-services#training-services",
-                description: "Professional development programs (SIC 85590)",
-                icon: School,
               },
             ],
           },
           {
-            title: "Trade & Logistics",
+            title: "Technology & Training",
             items: [
               {
-                label: "Shipping Services",
-                href: "/united-kingdom/mafadtech-services#shipping-services",
-                description:
-                  "Sea & coastal freight water transport (SIC 50200)",
-                icon: Truck,
+                label: "MAFAD Technology UK",
+                href: "/united-kingdom/mafadtech-services",
+                description: "IT consultancy & digital transformation",
+                icon: Code,
               },
               {
-                label: "Sales & Purchases",
-                href: "/united-kingdom/mafadtech-services#sales-purchases",
-                description:
-                  "Agricultural, textiles & semi-finished goods (SIC 46110)",
-                icon: Globe,
+                label: "MAFAD Training Academy",
+                href: "/united-kingdom#training-academy",
+                description: "Professional development programs",
+                icon: School,
               },
             ],
           },
@@ -234,13 +213,13 @@ const menuConfig = {
     // },
     //   ],
     // },
-    // {
-    //   id: "careers",
-    //   label: "Careers",
-    //   type: "link",
-    //   href: "/careers",
-    //   icon: Briefcase,
-    // },
+    {
+      id: "careers",
+      label: "Careers",
+      type: "link",
+      href: "/careers",
+      icon: Briefcase,
+    },
     // {
     //   id: "contact",
     //   label: "Contact",
@@ -340,7 +319,7 @@ export default function Navigation() {
             <div className="flex flex-col">
               <span className="text-xl font-black text-mafad-navy">MAFAD</span>
               <span className="text-[9px] font-semibold text-mafad-cyan tracking-[0.25em] uppercase">
-                TECHNOLOGY GROUP
+                GROUP LIMITED
               </span>
             </div>
           </Link>

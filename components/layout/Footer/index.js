@@ -22,10 +22,10 @@ import {
 
 // WhatsApp Configuration
 const WHATSAPP_NIGERIA = "2348123456789"; // Replace with actual Nigeria number
-const WHATSAPP_UK = "447123456789"; // Replace with actual UK number
+const WHATSAPP_UK = "441482482401";
 
 const whatsappNigeriaUrl = `https://wa.me/${WHATSAPP_NIGERIA}?text=${encodeURIComponent("Hello MAFAD Nigeria! I have an enquiry.")}`;
-const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello MAFADTECH UK! I have an enquiry.")}`;
+const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello MAFAD Group UK! I have an enquiry.")}`;
 
 // Social Media Links - From your documents
 const socialLinks = [
@@ -82,9 +82,9 @@ const contactLinks = [
     color: "hover:bg-mafad-cyan",
   },
   {
-    name: "Email UK",
+    name: "Email Group",
     icon: Mail,
-    url: "mailto:info@mafadtechservices.co.uk",
+    url: "mailto:info@mafadgroup.com",
     color: "hover:bg-mafad-cyan",
   },
 ];
@@ -99,10 +99,10 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h3 className="text-2xl font-bold mb-4">
               <span className="text-white">MAFAD</span>
-              <span className="text-mafad-cyan"> TECHNOLOGY</span>
+              <span className="text-mafad-cyan"> GROUP LIMITED</span>
             </h3>
             <p className="text-gray-300 text-sm mb-6 leading-relaxed">
-              Innovating Technology. Powering Trade. Building the Future.
+              One Group. Many Solutions. Greater Impact.
             </p>
 
             {/* Registration Badges */}
@@ -187,6 +187,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/careers"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/investor-relations/compliance"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
@@ -202,7 +210,7 @@ export default function Footer() {
               Nigeria Operations
             </h4>
             <p className="text-xs text-gray-400 mb-2">
-              MAFAD Technology Limited
+              MAFAD Technology Limited (RC 6893862)
             </p>
             <ul className="space-y-3 text-sm">
               <li>
@@ -210,7 +218,7 @@ export default function Footer() {
                   href="/nigeria/mafad-technology"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  MAFAD Technology (ICT Services)
+                  MAFAD Technology Nigeria
                 </Link>
               </li>
               <li>
@@ -218,19 +226,27 @@ export default function Footer() {
                   href="/nigeria/coca-cola"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Coca-Cola Distribution
+                  Coca-Cola Distribution/Retail
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/nigeria/solar-energy"
+                  href="/nigeria#clothings"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Solar & Renewable Energy
+                  MAFAD Clothings Nigeria
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/nigeria#logistics"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Transport & Logistics
                 </Link>
               </li>
               <li className="text-gray-500 text-sm italic">
-                (More services coming soon)
+                Future Ventures (coming soon)
               </li>
             </ul>
             <div className="mt-4 flex items-center space-x-2 text-xs text-gray-400">
@@ -245,45 +261,53 @@ export default function Footer() {
               United Kingdom
             </h4>
             <p className="text-xs text-gray-400 mb-2">
-              MAFADTECH Services Limited
+              MAFADTECH Services Limited (Co. 16173180)
             </p>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="/united-kingdom/mafadtech-services#technology-consultancy"
+                  href="/united-kingdom#care-staffing"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Technology Consultancy (62020)
+                  MAFAD Care Staffing
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/united-kingdom/mafadtech-services#training-services"
+                  href="/united-kingdom#care-services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Training Services (85590)
+                  MAFAD Care Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/united-kingdom/mafadtech-services#shipping-services"
+                  href="/united-kingdom/mafadtech-services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Shipping Services (50200)
+                  MAFAD Technology UK
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/united-kingdom/mafadtech-services#sales-purchases"
+                  href="/united-kingdom#training-academy"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Sales & Purchases (46110)
+                  MAFAD Training Academy
                 </Link>
               </li>
             </ul>
             <div className="mt-4 flex items-center space-x-2 text-xs text-gray-400">
               <MapPin className="w-3 h-3" />
               <span>Hull, England HU9 5EQ</span>
+            </div>
+            <div className="mt-2 flex items-center space-x-2 text-xs text-gray-400">
+              <Phone className="w-3 h-3" />
+              <span>+44 1482 482401</span>
+            </div>
+            <div className="mt-2 flex items-center space-x-2 text-xs text-gray-400">
+              <Mail className="w-3 h-3" />
+              <span>info@mafadgroup.com</span>
             </div>
           </div>
 
@@ -319,7 +343,7 @@ export default function Footer() {
             {/* Copyright */}
             <div>
               <p>
-                © {new Date().getFullYear()} MAFAD Technology Group. All rights
+                © {new Date().getFullYear()} MAFAD Group Limited. All rights
                 reserved.
               </p>
             </div>

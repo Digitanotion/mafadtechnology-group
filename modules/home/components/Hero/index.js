@@ -49,9 +49,9 @@ export default function Hero() {
 
             {/* Main headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Innovating{" "}
+              One Group.{" "}
               <span className="text-mafad-cyan relative">
-                Technology
+                Many Solutions.
                 <svg
                   className="absolute -bottom-2 left-0 w-full"
                   height="8"
@@ -70,25 +70,24 @@ export default function Hero() {
                 </svg>
               </span>
               <br />
-              <span className="text-mafad-cyan">Powering Trade.</span>
-              <br />
-              Building the Future.
+              <span className="text-mafad-cyan">Greater Impact.</span>
             </h1>
 
             {/* Description */}
             <p className="text-xl text-gray-300 max-w-2xl">
-              A diversified multinational group delivering sustainable value
-              through technology, trade, and services in Nigeria and the United
-              Kingdom.
+              MAFAD GROUP LIMITED is a diversified UK-Nigeria business group
+              delivering innovative solutions across healthcare, technology,
+              education, fashion, FMCG distribution, logistics and future
+              business ventures.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <Button
-                href="/nigeria/coca-cola"
+                href="/#businesses"
                 className="bg-mafad-cyan text-mafad-navy hover:bg-mafad-cyan/90 px-8 py-4 text-lg group"
               >
-                Shop Now
+                Explore Our Businesses
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
@@ -96,7 +95,7 @@ export default function Hero() {
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-mafad-navy px-8 py-4 text-lg"
               >
-                Request a Service
+                Request a Consultation
               </Button>
             </div>
 
@@ -107,12 +106,12 @@ export default function Hero() {
                 <div className="text-sm text-gray-300">Countries</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-mafad-cyan">6+</div>
-                <div className="text-sm text-gray-300">Business Units</div>
+                <div className="text-2xl font-bold text-mafad-cyan">7+</div>
+                <div className="text-sm text-gray-300">Business Sectors</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-mafad-cyan">₦45M</div>
-                <div className="text-sm text-gray-300">Year 1 Revenue</div>
+                <div className="text-2xl font-bold text-mafad-cyan">2021</div>
+                <div className="text-sm text-gray-300">Group Founded</div>
               </div>
             </div>
           </div>
@@ -143,13 +142,13 @@ export default function Hero() {
                 </div>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="text-xs bg-white/10 px-2 py-1 rounded">
-                    ICT Services
+                    Technology
                   </span>
                   <span className="text-xs bg-white/10 px-2 py-1 rounded">
                     Coca-Cola HBC
                   </span>
                   <span className="text-xs bg-white/10 px-2 py-1 rounded">
-                    Fashion Retail
+                    Fashion
                   </span>
                 </div>
               </div>
@@ -177,30 +176,27 @@ export default function Hero() {
                 </div>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="text-xs bg-white/10 px-2 py-1 rounded">
-                    IT Consultancy
+                    Healthcare
+                  </span>
+                  <span className="text-xs bg-white/10 px-2 py-1 rounded">
+                    Technology
                   </span>
                   <span className="text-xs bg-white/10 px-2 py-1 rounded">
                     Training
                   </span>
-                  <span className="text-xs bg-white/10 px-2 py-1 rounded">
-                    Logistics
-                  </span>
                 </div>
               </div>
 
-              {/* Growth indicator */}
+              {/* Why MAFAD Group */}
               <div className="bg-gradient-to-r from-mafad-cyan/20 to-transparent rounded-2xl p-6">
                 <div className="flex items-center space-x-3">
                   <TrendingUp className="w-8 h-8 text-mafad-cyan" />
                   <div>
                     <p className="text-sm uppercase tracking-wider text-gray-300">
-                      5-Year Projection
+                      Why MAFAD Group
                     </p>
-                    <p className="text-2xl font-bold">
-                      ₦160M{" "}
-                      <span className="text-sm font-normal text-gray-300">
-                        by 2030
-                      </span>
+                    <p className="text-lg font-bold">
+                      Innovation. Trusted Partnerships. Sustainable Growth.
                     </p>
                   </div>
                 </div>
