@@ -2,12 +2,14 @@
 
 import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
 import Link from "next/link";
 import Image from "next/image";
 import {
   Building2,
   MapPin,
   School,
+  Briefcase,
   ArrowRight,
 } from "lucide-react";
 
@@ -147,6 +149,31 @@ export default function UKOperations() {
                 )}
               </div>
             </Card>
+          </div>
+
+          {/* CTA: Care roles -> Careers page */}
+          <div className="mt-16 bg-mafad-navy rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-start md:items-center gap-4">
+              <div className="w-12 h-12 bg-mafad-cyan/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Briefcase className="w-6 h-6 text-mafad-cyan" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  Looking to join our care team?
+                </h3>
+                <p className="text-gray-300 text-sm">
+                  We&apos;re recruiting Healthcare Assistants, Support Workers
+                  and Care Professionals across the UK.
+                </p>
+              </div>
+            </div>
+            <Button
+              href="/careers"
+              className="bg-mafad-cyan text-mafad-navy hover:bg-mafad-cyan/90 whitespace-nowrap"
+            >
+              View Care Opportunities
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </Container>
       </section>
