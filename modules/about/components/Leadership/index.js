@@ -17,7 +17,7 @@ const teamMembers = [
     image: "/images/team/muyiwa.jpg",
     social: {
       linkedin: "#",
-      email: "muyiwa.ayolotu@mafadtechnology.com",
+      email: "muyiwa.ayolotu@mafadgroup.com",
     },
     expertise: [
       //   "Strategic Planning",
@@ -123,7 +123,7 @@ const teamMembers = [
   //     image: "/images/team/placeholder1.png",
   //     social: {
   //       linkedin: "#",
-  //       email: "amina.yusuf@mafadtechnology.com",
+  //       email: "amina.yusuf@mafadgroup.com",
   //     },
   //     expertise: [
   //       "Curriculum Development",
@@ -143,7 +143,7 @@ const teamMembers = [
   //     image: "/images/team/placeholder2.png",
   //     social: {
   //       linkedin: "#",
-  //       email: "d.thompson@mafadtechservices.co.uk",
+  //       email: "d.thompson@mafadgroup.com",
   //     },
   //     expertise: [
   //       "Logistics Coordination",

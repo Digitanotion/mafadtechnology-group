@@ -21,11 +21,9 @@ import {
 } from "lucide-react";
 
 // WhatsApp Configuration
-const WHATSAPP_NIGERIA = "2348123456789"; // Replace with actual Nigeria number
 const WHATSAPP_UK = "441482482401";
 
-const whatsappNigeriaUrl = `https://wa.me/${WHATSAPP_NIGERIA}?text=${encodeURIComponent("Hello MAFAD Nigeria! I have an enquiry.")}`;
-const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello MAFAD Group UK! I have an enquiry.")}`;
+const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello MAFAD Group! I have an enquiry.")}`;
 
 // Social Media Links - From your documents
 const socialLinks = [
@@ -64,22 +62,10 @@ const socialLinks = [
 // Quick Contact Links
 const contactLinks = [
   {
-    name: "WhatsApp Nigeria",
-    icon: MessageCircle,
-    url: whatsappNigeriaUrl,
-    color: "hover:bg-[#25D366]",
-  },
-  {
-    name: "WhatsApp UK",
+    name: "WhatsApp",
     icon: MessageCircle,
     url: whatsappUKUrl,
     color: "hover:bg-[#25D366]",
-  },
-  {
-    name: "Email Nigeria",
-    icon: Mail,
-    url: "mailto:info@mafadtechnology.com.ng",
-    color: "hover:bg-mafad-cyan",
   },
   {
     name: "Email Group",
@@ -261,12 +247,12 @@ export default function Footer() {
               United Kingdom
             </h4>
             <p className="text-xs text-gray-400 mb-2">
-              MAFADTECH Services Limited (Co. 16173180)
+              MAFAD Group Limited (Co. 16173180)
             </p>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="/united-kingdom#care-staffing"
+                  href="/united-kingdom/care-staffing"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   MAFAD Care Staffing
@@ -274,7 +260,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/united-kingdom#care-services"
+                  href="/united-kingdom/care-staffing"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   MAFAD Care Services

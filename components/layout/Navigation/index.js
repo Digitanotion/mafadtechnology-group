@@ -146,13 +146,13 @@ const menuConfig = {
             items: [
               {
                 label: "MAFAD Care Staffing",
-                href: "/united-kingdom#care-staffing",
+                href: "/united-kingdom/care-staffing",
                 description: "Healthcare workforce solutions",
                 icon: Users,
               },
               {
                 label: "MAFAD Care Services",
-                href: "/united-kingdom#care-services",
+                href: "/united-kingdom/care-staffing",
                 description: "Person-centred care (future)",
                 icon: Building2,
               },

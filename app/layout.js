@@ -104,7 +104,7 @@ const organizationJsonLd = {
     },
     {
       "@type": "Organization",
-      name: "MAFADTECH Services Limited",
+      name: "MAFAD Group Limited",
       address: {
         "@type": "PostalAddress",
         streetAddress: "29 Imperia Way",

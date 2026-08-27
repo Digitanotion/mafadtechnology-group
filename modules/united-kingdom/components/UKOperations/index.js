@@ -1,24 +1,15 @@
 "use client";
 
 import Container from "@/components/ui/Container";
-import Card from "@/components/ui/Card";
-import Button from "@/components/ui/Button";
 import Link from "next/link";
 import Image from "next/image";
 import {
   Building2,
   MapPin,
   School,
-  Briefcase,
+  HeartPulse,
   ArrowRight,
 } from "lucide-react";
-
-const commitments = [
-  "Reliable staffing solutions",
-  "Professional care standards",
-  "People-focused services",
-  "Sustainable workforce development",
-];
 
 export default function UKOperations() {
   return (
@@ -73,38 +64,11 @@ export default function UKOperations() {
         </Container>
       </section>
 
-      {/* Healthcare & Social Care */}
-      <section
-        id="care-staffing"
-        className="py-20 bg-white scroll-mt-24"
-      >
+      {/* Healthcare & Social Care - teaser, full content on dedicated page */}
+      <section id="care-staffing" className="py-20 bg-white scroll-mt-24">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-mafad-cyan font-semibold uppercase tracking-wider text-sm">
-                Healthcare & Social Care
-              </span>
-              <h2 className="text-3xl font-bold text-mafad-navy mt-2 mb-6">
-                MAFAD Care Staffing
-              </h2>
-              <p className="text-lg text-gray-600 mb-4">
-                Through MAFAD Care Staffing and future MAFAD Care Services, we
-                aim to provide quality workforce solutions and person-centred
-                support.
-              </p>
-              <p className="text-sm font-semibold text-mafad-navy mb-3">
-                Our commitment:
-              </p>
-              <ul className="space-y-2">
-                {commitments.map((item) => (
-                  <li key={item} className="flex items-center text-gray-600">
-                    <span className="w-1.5 h-1.5 bg-mafad-cyan rounded-full mr-3" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/5]">
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
               <Image
                 src="/images/stock/uk-care-staffing.jpg"
                 alt="MAFAD Care Staffing - healthcare professional and client"
@@ -113,67 +77,27 @@ export default function UKOperations() {
                 className="object-cover"
               />
             </div>
-          </div>
-
-          <div id="care-services" className="grid lg:grid-cols-2 gap-12 items-center mt-20 scroll-mt-24">
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] order-2 lg:order-1">
-              <Image
-                src="/images/stock/uk-care-services.jpg"
-                alt="MAFAD Care Services - person-centred care"
-                fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover"
-              />
-            </div>
-            <Card className="order-1 lg:order-2">
-              <h3 className="text-xl font-semibold text-mafad-navy mb-2">
-                MAFAD Care Services
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Providing compassionate, person-centred care designed around
-                individual needs.
+            <div>
+              <span className="text-mafad-cyan font-semibold uppercase tracking-wider text-sm">
+                Healthcare & Social Care
+              </span>
+              <h2 className="text-3xl font-bold text-mafad-navy mt-2 mb-6">
+                MAFAD Care Staffing
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Reliable healthcare professionals and workforce solutions for
+                care providers, plus MAFAD Care Services - compassionate,
+                person-centred care.
               </p>
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                Future services include
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["Supported living", "Domiciliary care", "Personal support"].map(
-                  (tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs bg-mafad-gray px-2 py-1 rounded-full text-gray-600"
-                    >
-                      {tag}
-                    </span>
-                  )
-                )}
-              </div>
-            </Card>
-          </div>
-
-          {/* CTA: Care roles -> Careers page */}
-          <div className="mt-16 bg-mafad-navy rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-start md:items-center gap-4">
-              <div className="w-12 h-12 bg-mafad-cyan/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Briefcase className="w-6 h-6 text-mafad-cyan" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-white mb-1">
-                  Looking to join our care team?
-                </h3>
-                <p className="text-gray-300 text-sm">
-                  We&apos;re recruiting Healthcare Assistants, Support Workers
-                  and Care Professionals across the UK.
-                </p>
-              </div>
+              <Link
+                href="/united-kingdom/care-staffing"
+                className="inline-flex items-center text-mafad-cyan font-semibold hover:text-mafad-navy transition-colors"
+              >
+                <HeartPulse className="w-4 h-4 mr-2" />
+                Learn more about Care Staffing
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
             </div>
-            <Button
-              href="/careers"
-              className="bg-mafad-cyan text-mafad-navy hover:bg-mafad-cyan/90 whitespace-nowrap"
-            >
-              View Care Opportunities
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
           </div>
         </Container>
       </section>

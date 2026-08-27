@@ -34,7 +34,7 @@ const registrations = [
   {
     country: "United Kingdom",
     icon: Globe,
-    company: "MAFADTECH Services Limited",
+    company: "MAFAD Group Limited",
     tradingAs: "trading as MAFAD Technology UK",
     number: "Company No: 16173180",
     date: "9 January 2025",

@@ -3,13 +3,12 @@ import { Contact } from "@/modules/contact";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with MAFAD Group Limited. WhatsApp, email and phone contacts for our Nigeria and United Kingdom offices.",
+    "Get in touch with MAFAD Group Limited. WhatsApp, email and phone contact for our United Kingdom office.",
   alternates: { canonical: "/contact" },
   openGraph: {
     url: "/contact",
     title: "Contact MAFAD Group Limited",
-    description:
-      "Reach our Nigeria and United Kingdom teams by WhatsApp, email or phone.",
+    description: "Reach our team by WhatsApp, email or phone.",
   },
 };
 

@@ -2,6 +2,7 @@
 
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import VideoPlayer from "@/components/ui/VideoPlayer";
 import {
   Briefcase,
   CheckCircle2,
@@ -76,6 +77,29 @@ export default function Careers() {
                 Apply Now
               </Button>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Recruitment Video */}
+      <section className="py-20 bg-mafad-gray">
+        <Container>
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-mafad-navy mb-4">
+              See MAFAD in Action
+            </h2>
+            <p className="text-lg text-gray-600">
+              A look at our people, our services and the opportunities
+              waiting for you across the Group.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <VideoPlayer
+              src="/videos/careers-recruitment.mp4"
+              poster="/images/video-posters/careers-recruitment-poster.jpg"
+              alt="MAFAD Group Recruitment & Corporate Advert"
+              aspect="aspect-video"
+            />
           </div>
         </Container>
       </section>

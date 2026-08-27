@@ -177,7 +177,7 @@ export default function Hero() {
                       <span className="font-semibold">United Kingdom</span>
                     </div>
                     <p className="text-2xl font-bold mb-1">
-                      MAFADTECH Services Ltd
+                      MAFAD Group Ltd
                     </p>
                     <p className="text-sm text-gray-300">
                       Since 2025 | No: 16173180

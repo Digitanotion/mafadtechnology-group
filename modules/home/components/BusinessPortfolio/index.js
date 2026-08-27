@@ -26,7 +26,7 @@ const businesses = [
         description:
           "Reliable healthcare professionals and workforce solutions for care providers",
         icon: HeartPulse,
-        href: "/united-kingdom#care-staffing",
+        href: "/united-kingdom/care-staffing",
         color: "from-rose-500/20 to-pink-500/20",
         iconColor: "text-rose-500",
         tags: ["Healthcare", "Staffing"],
@@ -36,7 +36,7 @@ const businesses = [
         description:
           "Person-centred care solutions supporting individuals and communities",
         icon: Users,
-        href: "/united-kingdom#care-services",
+        href: "/united-kingdom/care-staffing",
         color: "from-purple-500/20 to-pink-500/20",
         iconColor: "text-purple-500",
         tags: ["Supported Living", "Future"],

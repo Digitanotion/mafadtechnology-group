@@ -30,7 +30,7 @@ import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 
 // WhatsApp Configuration
-const WHATSAPP_NUMBER = "2348123456789"; // Replace with actual number
+const WHATSAPP_NUMBER = "441482482401";
 const WHATSAPP_MESSAGE =
   "Hello! I'm interested in Coca-Cola products. Please provide more information about bulk purchases and pricing.";
 

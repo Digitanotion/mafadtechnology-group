@@ -29,7 +29,7 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 
 // WhatsApp Configuration
-const WHATSAPP_NUMBER = "2348123456789"; // Replace with actual number
+const WHATSAPP_NUMBER = "441482482401";
 const WHATSAPP_MESSAGE =
   "Hello! I'm interested in your Solar Energy solutions. Please provide more information.";
 

@@ -23,35 +23,15 @@ import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 
 // WhatsApp Configuration
-const WHATSAPP_NIGERIA = "2348123456789"; // Replace with actual Nigeria number
 const WHATSAPP_UK = "441482482401";
 
-const whatsappNigeriaUrl = `https://wa.me/${WHATSAPP_NIGERIA}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFAD Technology Nigeria.")}`;
-const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFAD Group UK.")}`;
+const whatsappUKUrl = `https://wa.me/${WHATSAPP_UK}?text=${encodeURIComponent("Hello! I'd like to get in touch with MAFAD Group.")}`;
 
 const offices = [
   {
-    country: "Nigeria",
-    flag: "🇳🇬",
-    company: "MAFAD Technology Limited",
-    rc: "RC: 6893862",
-    address: ["Owo, Ondo State", "Nigeria"],
-    phone: "+234 812 345 6789",
-    email: "info@mafadtechnology.com.ng",
-    hours: [
-      "Monday - Friday: 8:00 AM - 6:00 PM",
-      "Saturday: 9:00 AM - 4:00 PM",
-      "Sunday: Closed",
-    ],
-    icon: Building2,
-    color: "from-mafad-navy to-mafad-navy/90",
-    textColor: "text-mafad-cyan",
-    map: "https://maps.google.com/?q=Owo,Ondo,Nigeria",
-  },
-  {
     country: "United Kingdom",
     flag: "🇬🇧",
-    company: "MAFADTECH Services Limited",
+    company: "MAFAD Group Limited",
     rc: "Company No: 16173180",
     address: ["29, Imperia Way", "Hull, England HU9 5EQ"],
     phone: "+44 1482 482401",
@@ -67,22 +47,22 @@ const offices = [
 const departments = [
   {
     name: "Technology & ICT",
-    email: "tech@mafadtechnology.com.ng",
-    phone: "+234 812 345 6789",
-    whatsapp: WHATSAPP_NIGERIA,
+    email: "tech@mafadgroup.com",
+    phone: "+44 1482 482401",
+    whatsapp: WHATSAPP_UK,
     response: "Within 2 hours",
     icon: Briefcase,
   },
   {
     name: "Coca-Cola Distribution",
-    email: "cocacola@mafadtechnology.com.ng",
-    phone: "+234 812 345 6789",
-    whatsapp: WHATSAPP_NIGERIA,
+    email: "cocacola@mafadgroup.com",
+    phone: "+44 1482 482401",
+    whatsapp: WHATSAPP_UK,
     response: "Within 30 minutes",
     icon: Briefcase,
   },
   {
-    name: "UK Services",
+    name: "General Enquiries",
     email: "info@mafadgroup.com",
     phone: "+44 1482 482401",
     whatsapp: WHATSAPP_UK,
@@ -99,9 +79,9 @@ const departments = [
   },
   {
     name: "Training & Academy",
-    email: "training@mafadtechnology.com.ng",
-    phone: "+234 812 345 6789",
-    whatsapp: WHATSAPP_NIGERIA,
+    email: "training@mafadgroup.com",
+    phone: "+44 1482 482401",
+    whatsapp: WHATSAPP_UK,
     response: "Within 24 hours",
     icon: Users,
   },
@@ -111,7 +91,7 @@ const faqs = [
   {
     question: "What is the best way to reach you?",
     answer:
-      "WhatsApp is our fastest response channel. Click the WhatsApp buttons below to chat directly with our Nigeria or UK teams.",
+      "WhatsApp is our fastest response channel. Click the WhatsApp button below to chat directly with our team.",
   },
   {
     question: "What are your response times?",
@@ -119,9 +99,9 @@ const faqs = [
       "WhatsApp: < 5 minutes | Email: within 24 hours | Phone: during business hours",
   },
   {
-    question: "Do you have physical offices?",
+    question: "Do you have a physical office?",
     answer:
-      "Yes. We have offices in Owo, Ondo State (Nigeria) and Hull, England (United Kingdom). Appointments are recommended.",
+      "Yes. Our office is in Hull, England (United Kingdom). Appointments are recommended.",
   },
   {
     question: "Can I place orders via WhatsApp?",
@@ -187,7 +167,7 @@ export default function Contact() {
 
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Choose the fastest way to reach us - WhatsApp, email, phone, or
-              visit our offices in Nigeria and the UK.
+              visit our office in the UK.
             </p>
 
             {/* Quick Contact Stats */}
@@ -212,30 +192,7 @@ export default function Contact() {
       {/* WhatsApp Quick Access */}
       <section className="py-12 bg-white border-b border-gray-100">
         <Container>
-          <div className="grid md:grid-cols-2 gap-6">
-            <a
-              href={whatsappNigeriaUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-6 bg-[#25D366]/10 rounded-2xl hover:bg-[#25D366]/20 transition-colors group"
-            >
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">WhatsApp Nigeria</p>
-                  <p className="text-lg font-bold text-gray-900">
-                    MAFAD Technology
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Click to chat • &lt;5min response
-                  </p>
-                </div>
-              </div>
-              <ArrowRight className="w-5 h-5 text-[#25D366] group-hover:translate-x-1 transition-transform" />
-            </a>
-
+          <div className="max-w-md mx-auto">
             <a
               href={whatsappUKUrl}
               target="_blank"
@@ -247,14 +204,12 @@ export default function Contact() {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500">
-                    WhatsApp United Kingdom
-                  </p>
+                  <p className="text-sm text-gray-500">WhatsApp</p>
                   <p className="text-lg font-bold text-gray-900">
-                    MAFAD Group UK
+                    MAFAD Group Limited
                   </p>
                   <p className="text-sm text-gray-600">
-                    Click to chat • &lt;2hr response
+                    Click to chat • &lt;5min response
                   </p>
                 </div>
               </div>
@@ -269,15 +224,13 @@ export default function Contact() {
         <Container>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-mafad-navy mb-4">
-              Our Offices
+              Our Office
             </h2>
-            <p className="text-xl text-gray-600">
-              Visit us in Nigeria or the United Kingdom
-            </p>
+            <p className="text-xl text-gray-600">Visit us in the United Kingdom</p>
             <div className="w-24 h-1 bg-mafad-cyan mx-auto mt-6" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid gap-8 max-w-xl mx-auto">
             {offices.map((office, idx) => {
               const Icon = office.icon;
               return (
@@ -360,11 +313,7 @@ export default function Contact() {
 
                     <div className="mt-6 pt-6 border-t border-gray-100">
                       <a
-                        href={
-                          office.country === "Nigeria"
-                            ? whatsappNigeriaUrl
-                            : whatsappUKUrl
-                        }
+                        href={whatsappUKUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`inline-flex items-center ${office.textColor} font-semibold hover:opacity-80 transition-opacity group`}
@@ -451,7 +400,7 @@ export default function Contact() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-mafad-cyan focus:border-transparent outline-none"
-                          placeholder="+234 812 345 6789"
+                          placeholder="+44 1482 482401"
                         />
                       </div>
                     </div>
@@ -473,7 +422,7 @@ export default function Contact() {
                           <option value="cocacola">
                             Coca-Cola Distribution
                           </option>
-                          <option value="uk">UK Services</option>
+                          <option value="general">General Enquiries</option>
                           <option value="training">Training & Academy</option>
                           <option value="other">Other</option>
                         </select>
@@ -599,18 +548,8 @@ export default function Contact() {
             <div className="text-center">
               <MapPin className="w-12 h-12 text-mafad-cyan mx-auto mb-4" />
               <p className="text-gray-600 mb-2">Interactive Map Coming Soon</p>
-              <p className="text-sm text-gray-500">
-                Owo, Nigeria | Hull, United Kingdom
-              </p>
+              <p className="text-sm text-gray-500">Hull, United Kingdom</p>
               <div className="mt-4 flex gap-4 justify-center">
-                <a
-                  href="https://maps.google.com/?q=Owo,Ondo,Nigeria"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-mafad-cyan hover:underline text-sm"
-                >
-                  Nigeria Office
-                </a>
                 <a
                   href="https://maps.google.com/?q=HU9+5EQ"
                   target="_blank"
@@ -635,30 +574,20 @@ export default function Contact() {
             </h2>
             <p className="text-lg text-gray-300 mb-8">
               Get the fastest response by messaging us directly on WhatsApp.
-              Choose your region below.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href={whatsappNigeriaUrl}
+                href={whatsappUKUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#25D366] text-white hover:bg-[#25D366]/90 px-8 py-4 text-lg rounded-xl font-semibold transition-all"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Nigeria
-              </a>
-              <a
-                href={whatsappUKUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-white text-mafad-navy hover:bg-gray-100 px-8 py-4 text-lg rounded-xl font-semibold transition-all"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp UK
+                Chat on WhatsApp
               </a>
             </div>
             <p className="text-sm text-gray-400 mt-6">
-              🇳🇬 Nigeria: &lt;5min response | 🇬🇧 UK: &lt;2hr response
+              &lt;5min response time
             </p>
           </div>
         </Container>

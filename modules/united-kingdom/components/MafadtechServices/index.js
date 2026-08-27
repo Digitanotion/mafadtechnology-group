@@ -37,9 +37,9 @@ import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 
 // WhatsApp Configuration
-const WHATSAPP_NUMBER = "447123456789"; // Replace with actual UK number
+const WHATSAPP_NUMBER = "441482482401";
 const WHATSAPP_MESSAGE =
-  "Hello! I'm interested in MAFADTECH Services UK. Please provide more information.";
+  "Hello! I'm interested in MAFAD Group UK. Please provide more information.";
 
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
@@ -194,7 +194,7 @@ export default function MafadtechServices() {
               <div className="flex items-center space-x-2 text-mafad-cyan">
                 <Building2 className="w-6 h-6" />
                 <span className="text-sm font-semibold uppercase tracking-wider">
-                  MAFADTECH Services Limited
+                  MAFAD Group Limited
                 </span>
               </div>
 
@@ -437,7 +437,7 @@ export default function MafadtechServices() {
                   <Building2 className="w-5 h-5 text-mafad-cyan flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-mafad-navy">
-                      MAFADTECH Services Limited
+                      MAFAD Group Limited
                     </p>
                     <p className="text-gray-600">Company No: 16173180</p>
                     <p className="text-sm text-gray-500">
