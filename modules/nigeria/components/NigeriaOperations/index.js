@@ -3,6 +3,7 @@
 import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Globe,
   MapPin,
@@ -69,8 +70,19 @@ export default function NigeriaOperations() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-mafad-navy via-mafad-navy to-mafad-navy/95 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      <section className="relative bg-mafad-navy text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/stock/ng-lagos-skyline.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-mafad-navy via-mafad-navy/95 to-mafad-navy" />
+        </div>
+        <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
             style={{

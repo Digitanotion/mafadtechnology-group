@@ -3,11 +3,10 @@
 import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Building2,
   MapPin,
-  HeartPulse,
-  Code,
   School,
   ArrowRight,
 } from "lucide-react";
@@ -23,8 +22,19 @@ export default function UKOperations() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-mafad-navy via-mafad-navy to-mafad-navy/95 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      <section className="relative bg-mafad-navy text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/stock/hero-skyline.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-mafad-navy via-mafad-navy/95 to-mafad-navy" />
+        </div>
+        <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
             style={{
@@ -92,10 +102,28 @@ export default function UKOperations() {
                 ))}
               </ul>
             </div>
-            <Card id="care-services" className="scroll-mt-24">
-              <div className="p-4 bg-rose-500/10 rounded-xl mb-4 inline-block">
-                <HeartPulse className="w-8 h-8 text-rose-500" />
-              </div>
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/5]">
+              <Image
+                src="/images/stock/uk-care-staffing.jpg"
+                alt="MAFAD Care Staffing - healthcare professional and client"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <div id="care-services" className="grid lg:grid-cols-2 gap-12 items-center mt-20 scroll-mt-24">
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] order-2 lg:order-1">
+              <Image
+                src="/images/stock/uk-care-services.jpg"
+                alt="MAFAD Care Services - person-centred care"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <Card className="order-1 lg:order-2">
               <h3 className="text-xl font-semibold text-mafad-navy mb-2">
                 MAFAD Care Services
               </h3>
@@ -127,36 +155,39 @@ export default function UKOperations() {
       <section className="py-20 bg-gray-50">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <Card className="order-2 lg:order-1">
-              <div className="p-4 bg-indigo-500/10 rounded-xl mb-4 inline-block">
-                <Code className="w-8 h-8 text-indigo-500" />
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+              <Image
+                src="/images/stock/uk-technology.jpg"
+                alt="MAFAD Technology UK - software development"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-mafad-navy/80 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "IT consultancy",
+                    "Digital innovation",
+                    "Transformation solutions",
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs bg-white/90 px-2 py-1 rounded-full text-mafad-navy font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <Link
+                  href="/united-kingdom/mafadtech-services"
+                  className="mt-3 inline-flex items-center text-white font-semibold hover:text-mafad-cyan transition-colors"
+                >
+                  View all Technology services
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
               </div>
-              <h3 className="text-xl font-semibold text-mafad-navy mb-2">
-                MAFAD Technology UK
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "IT consultancy",
-                  "Digital innovation",
-                  "Business technology support",
-                  "Transformation solutions",
-                ].map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs bg-mafad-gray px-2 py-1 rounded-full text-gray-600"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <Link
-                href="/united-kingdom/mafadtech-services"
-                className="mt-4 inline-flex items-center text-mafad-cyan font-semibold hover:text-mafad-navy transition-colors"
-              >
-                View all Technology services
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </Card>
+            </div>
             <div className="order-1 lg:order-2">
               <span className="text-mafad-cyan font-semibold uppercase tracking-wider text-sm">
                 Technology Solutions

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, TrendingUp, MapPin, Building2 } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
@@ -16,7 +17,21 @@ export default function Hero() {
   if (!mounted) return null;
 
   return (
-    <section className="relative bg-gradient-to-br from-mafad-navy via-mafad-navy to-mafad-navy/95 text-white overflow-hidden">
+    <section className="relative bg-mafad-navy text-white overflow-hidden">
+      {/* Background photo */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/stock/hero-skyline.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-mafad-navy via-mafad-navy/85 to-mafad-navy/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-mafad-navy via-transparent to-mafad-navy/60" />
+      </div>
+
       {/* Animated background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -29,7 +44,7 @@ export default function Hero() {
       </div>
 
       {/* Cyan accent line */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-mafad-cyan" />
+      <div className="absolute top-0 left-0 w-full h-1 bg-mafad-cyan z-10" />
 
       <Container className="relative py-20 md:py-28 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
