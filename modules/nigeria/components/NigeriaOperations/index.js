@@ -112,7 +112,7 @@ export default function NigeriaOperations() {
             <div className="flex flex-wrap justify-center gap-6 mt-12">
               <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full">
                 <MapPin className="w-4 h-4 text-mafad-cyan" />
-                <span className="text-sm">Owo & Akure, Ondo State</span>
+                <span className="text-sm">Lagos, Owo & Akure</span>
               </div>
             </div>
           </div>

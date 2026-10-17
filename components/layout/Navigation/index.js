@@ -81,7 +81,7 @@ const menuConfig = {
           value: "Coca-Cola HBC",
           badge: "CAC Registered",
         },
-        location: "Owo & Akure, Ondo State",
+        location: "Lagos, Owo & Akure",
         columns: [
           {
             title: "Technology & Retail",

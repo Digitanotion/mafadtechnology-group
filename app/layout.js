@@ -98,7 +98,9 @@ const organizationJsonLd = {
       name: "MAFAD Technology Limited",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Owo & Akure, Ondo State",
+        streetAddress: "Flat 6 Godwin Estate, Imedu Zone 31, Ibeju-Lekki LGA",
+        addressLocality: "Lekki",
+        addressRegion: "Lagos State",
         addressCountry: "NG",
       },
     },
@@ -107,9 +109,9 @@ const organizationJsonLd = {
       name: "MAFAD Group Limited",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "29 Imperia Way",
+        streetAddress: "Suite 702, K2 Building, 60 Bond Street",
         addressLocality: "Hull",
-        postalCode: "HU9 5EQ",
+        postalCode: "HU1 3EN",
         addressCountry: "GB",
       },
     },

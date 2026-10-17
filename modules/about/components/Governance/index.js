@@ -39,7 +39,7 @@ const registrations = [
     number: "Company No: 16173180",
     date: "9 January 2025",
     regulator: "Companies House",
-    address: "29, Imperia Way, Hull, England HU9 5EQ",
+    address: "Suite 702, K2 Building, 60 Bond Street, Hull, England HU1 3EN",
     sic: ["62020", "85590", "46110", "50200"],
   },
 ];

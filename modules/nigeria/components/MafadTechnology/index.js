@@ -384,7 +384,7 @@ export default function MafadTechnology() {
                     <div>
                       <h4 className="font-semibold mb-1">Strategic Location</h4>
                       <p className="text-sm text-gray-300">
-                        Owo & Akure, Ondo State
+                        Lagos, Owo & Akure
                       </p>
                     </div>
                   </div>

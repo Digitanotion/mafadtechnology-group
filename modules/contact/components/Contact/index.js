@@ -33,14 +33,32 @@ const offices = [
     flag: "🇬🇧",
     company: "MAFAD Group Limited",
     rc: "Company No: 16173180",
-    address: ["29, Imperia Way", "Hull, England HU9 5EQ"],
+    address: ["Suite 702, K2 Building", "60 Bond Street", "Hull, England HU1 3EN"],
     phone: "+44 1482 482401",
     email: "info@mafadgroup.com",
     hours: ["Monday - Friday: 9:00 AM - 5:30 PM", "Saturday - Sunday: Closed"],
     icon: Globe,
     color: "from-mafad-cyan to-mafad-cyan/90",
     textColor: "text-mafad-navy",
-    map: "https://maps.google.com/?q=HU9+5EQ",
+    map: "https://maps.google.com/?q=60+Bond+Street+Hull+HU1+3EN",
+  },
+  {
+    country: "Nigeria",
+    flag: "🇳🇬",
+    company: "MAFAD Technology Limited",
+    rc: "RC: 6893862",
+    address: [
+      "Lagos Office: Flat 6 Godwin Estate, Imedu Zone 31",
+      "Ibeju-Lekki LGA, Lekki, Lagos State",
+      "Owo & Akure Offices: Ondo State",
+    ],
+    phone: "+44 1482 482401",
+    email: "info@mafadgroup.com",
+    hours: ["Monday - Friday: 9:00 AM - 5:00 PM", "Saturday - Sunday: Closed"],
+    icon: Building2,
+    color: "from-mafad-navy to-mafad-navy/90",
+    textColor: "text-mafad-navy",
+    map: "https://maps.google.com/?q=Godwin+Estate+Imedu+Ibeju-Lekki+Lagos",
   },
 ];
 
@@ -101,7 +119,7 @@ const faqs = [
   {
     question: "Do you have a physical office?",
     answer:
-      "Yes. Our office is in Hull, England (United Kingdom). Appointments are recommended.",
+      "Yes. Our UK office is at Suite 702, K2 Building, 60 Bond Street, Hull HU1 3EN, and in Nigeria we have offices in Lekki (Lagos), Owo and Akure. Appointments are recommended.",
   },
   {
     question: "Can I place orders via WhatsApp?",
@@ -224,13 +242,13 @@ export default function Contact() {
         <Container>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-mafad-navy mb-4">
-              Our Office
+              Our Offices
             </h2>
-            <p className="text-xl text-gray-600">Visit us in the United Kingdom</p>
+            <p className="text-xl text-gray-600">Visit us in the United Kingdom and Nigeria</p>
             <div className="w-24 h-1 bg-mafad-cyan mx-auto mt-6" />
           </div>
 
-          <div className="grid gap-8 max-w-xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {offices.map((office, idx) => {
               const Icon = office.icon;
               return (
@@ -548,15 +566,23 @@ export default function Contact() {
             <div className="text-center">
               <MapPin className="w-12 h-12 text-mafad-cyan mx-auto mb-4" />
               <p className="text-gray-600 mb-2">Interactive Map Coming Soon</p>
-              <p className="text-sm text-gray-500">Hull, United Kingdom</p>
+              <p className="text-sm text-gray-500">Hull, United Kingdom · Lekki, Lagos</p>
               <div className="mt-4 flex gap-4 justify-center">
                 <a
-                  href="https://maps.google.com/?q=HU9+5EQ"
+                  href="https://maps.google.com/?q=60+Bond+Street+Hull+HU1+3EN"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-mafad-cyan hover:underline text-sm"
                 >
                   UK Office
+                </a>
+                <a
+                  href="https://maps.google.com/?q=Godwin+Estate+Imedu+Ibeju-Lekki+Lagos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-mafad-cyan hover:underline text-sm"
+                >
+                  Lagos Office
                 </a>
               </div>
             </div>

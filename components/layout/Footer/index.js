@@ -237,6 +237,10 @@ export default function Footer() {
             </ul>
             <div className="mt-4 flex items-center space-x-2 text-xs text-gray-400">
               <MapPin className="w-3 h-3" />
+              <span>Lekki, Lagos State</span>
+            </div>
+            <div className="mt-2 flex items-center space-x-2 text-xs text-gray-400">
+              <MapPin className="w-3 h-3" />
               <span>Owo & Akure, Ondo State</span>
             </div>
           </div>
@@ -285,7 +289,7 @@ export default function Footer() {
             </ul>
             <div className="mt-4 flex items-center space-x-2 text-xs text-gray-400">
               <MapPin className="w-3 h-3" />
-              <span>Hull, England HU9 5EQ</span>
+              <span>60 Bond Street, Hull HU1 3EN</span>
             </div>
             <div className="mt-2 flex items-center space-x-2 text-xs text-gray-400">
               <Phone className="w-3 h-3" />

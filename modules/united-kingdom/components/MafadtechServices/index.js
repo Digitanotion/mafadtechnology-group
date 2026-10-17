@@ -452,7 +452,7 @@ export default function MafadtechServices() {
                       Registered Address
                     </p>
                     <p className="text-gray-600">
-                      29, Imperia Way, Hull, England HU9 5EQ
+                      Suite 702, K2 Building, 60 Bond Street, Hull, England HU1 3EN
                     </p>
                   </div>
                 </div>
