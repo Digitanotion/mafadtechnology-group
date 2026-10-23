@@ -27,6 +27,7 @@ import {
   Target,
   Handshake,
   Home,
+  HeartPulse,
 } from "lucide-react";
 import Container from "@/components/ui/Container";
 
@@ -36,6 +37,13 @@ import Container from "@/components/ui/Container";
 
 const menuConfig = {
   mainNav: [
+    {
+      id: "mafadcare",
+      label: "MafadCare",
+      type: "link",
+      href: "https://www.mafadcare.com",
+      icon: HeartPulse,
+    },
     {
       id: "company",
       label: "Company",
@@ -236,6 +244,7 @@ const menuConfig = {
   },
 
   mobileSections: [
+    "mafadcare",
     "company",
     "nigeria",
     "uk",
@@ -514,9 +523,9 @@ export default function Navigation() {
         </div>
       </Container>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE MENU - explicit height: the nav's backdrop-blur (when scrolled) makes it the containing block for this fixed panel */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 top-[80px] bg-white z-40 overflow-y-auto">
+        <div className="lg:hidden fixed left-0 right-0 top-[80px] h-[calc(100dvh-80px)] bg-white z-40 overflow-y-auto">
           <div className="min-h-full px-4 py-6">
             <div className="space-y-1">
               {menuConfig.mobileSections.map((sectionId) => {
