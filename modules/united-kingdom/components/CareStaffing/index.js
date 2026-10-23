@@ -7,6 +7,8 @@ import Image from "next/image";
 import VideoPlayer from "@/components/ui/VideoPlayer";
 import { HeartPulse, MapPin, Briefcase, ArrowRight } from "lucide-react";
 
+const MAFADCARE_URL = "https://www.mafadcare.com";
+
 const commitments = [
   "Reliable staffing solutions",
   "Professional care standards",
@@ -92,6 +94,13 @@ export default function CareStaffing() {
                   </li>
                 ))}
               </ul>
+              <a
+                href={MAFADCARE_URL}
+                className="inline-flex items-center mt-6 text-mafad-cyan font-semibold hover:underline"
+              >
+                Know more about MafadCare
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
             </div>
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5]">
               <Image
@@ -137,7 +146,40 @@ export default function CareStaffing() {
                   )
                 )}
               </div>
+              <a
+                href={MAFADCARE_URL}
+                className="inline-flex items-center mt-6 text-mafad-cyan font-semibold hover:underline"
+              >
+                Know more about MafadCare
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
             </Card>
+          </div>
+
+          {/* Know more about MafadCare */}
+          <div className="mt-20 bg-mafad-gray rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-start md:items-center gap-4">
+              <div className="w-12 h-12 bg-mafad-cyan/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <HeartPulse className="w-6 h-6 text-mafad-cyan" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-mafad-navy mb-1">
+                  Know more about MafadCare
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Explore our care staffing and care services in full on the
+                  MafadCare website.
+                </p>
+              </div>
+            </div>
+            <Button
+              href={MAFADCARE_URL}
+              variant="secondary"
+              className="whitespace-nowrap"
+            >
+              Visit MafadCare
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
 
           {/* Recruitment / Overview Video */}
